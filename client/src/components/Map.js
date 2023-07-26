@@ -20,7 +20,7 @@ export const Map = () => {
     L.Marker.prototype.options.icon = DefaultIcon;
 
     useEffect(() => {
-        axios.get("https://earths.onrender.com/api/data")
+        axios.get("http://localhost:3001/api/data")
           .then(response => {
             setEarthquakes(response.data);
           })
